@@ -1,0 +1,15 @@
+name: brain_camcan
+ndim: 3
+
+batch_size: 1
+coords_batch_size: 350000
+num_workers: 8
+shuffle: True
+use_mask: True
+
+modality: t1t2
+crop_size: [192, 192, 192]
+voxel_size: [1.0, 1.0, 1.0]
+
+data_dir_path: /home/pti/Documents/datasets/camcan_malpem/val/
+atlas_path:

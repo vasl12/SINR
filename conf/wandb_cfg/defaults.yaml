@@ -1,0 +1,7 @@
+setup:
+    project: "INR_NLST"
+    entity: vasl12
+    mode: online
+watch:
+    log: all
+    log_freq: 100

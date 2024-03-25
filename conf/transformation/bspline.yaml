@@ -1,0 +1,6 @@
+type: bspline
+config:
+  cps: 2
+#   svf: True
+#   svf_steps: 7
+#   svf_scale: 1

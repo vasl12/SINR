@@ -1,0 +1,7 @@
+aff_lr: 1e-2
+def_lr: 1e-4
+
+lr_decay_step: 200
+epochs: 2500
+log_interval: 100
+affine_epochs: 250

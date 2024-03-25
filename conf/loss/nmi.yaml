@@ -1,0 +1,14 @@
+type: nmi
+
+mi_config:
+  vmin: 0.0
+  vmax: 1.0
+  num_bins: 64
+  sample_ratio: 0.7
+  normalised: True
+
+sim_weight: 1.0
+loss_roi: False
+
+reg_loss: l2reg_loss
+reg_weight: 0.1

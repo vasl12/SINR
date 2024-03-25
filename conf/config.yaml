@@ -1,0 +1,26 @@
+defaults:
+  - _self_
+  - data: brain_camcan
+  - network: deformable
+  - transformation: bspline
+  - loss: nmi
+  - training: training
+  - regularization: bending
+  - wandb_cfg: defaults
+
+metric_groups: ["disp_metrics", "image_metrics", "seg_metrics"]
+hparam_metrics: ["loss", "mean_dice", "folding_ratio"]
+
+analyse: True
+analyse_only: False
+
+wandb_disable: "False"
+verbose: 1
+gpu: 0
+baselines: False
+slurm: False
+
+hydra:
+    job:
+        chdir: True
+

@@ -1,0 +1,9 @@
+type: deformable
+activation: Siren
+positional_encoding: False
+affine_layers: [4, 4]
+deformable_layers: [3, 256, 256, 256, 3]
+omega: 50
+mapping_size: 256
+scale: 1.0
+factor: 1.0

@@ -1,0 +1,6 @@
+type: ncc
+sim_weight: 1.0
+window_size: 7
+
+reg_loss: l2reg_loss
+reg_weight: 0.1

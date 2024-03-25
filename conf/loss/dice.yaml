@@ -1,0 +1,5 @@
+sim_loss: dice
+sim_weight: 1.0
+
+reg_loss: l2reg_loss
+reg_weight: 0.4
