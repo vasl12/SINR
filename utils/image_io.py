@@ -32,20 +32,3 @@ def save_nifti(x, path, nim=None, verbose=False):
 
     if verbose:
         print("Nifti saved to: {}".format(path))
-
-
-def split_volume_idmat(image_path, output_prefix, data_type=np.float32):
-    """ Split an image volume into slices with identity matrix as I2W transformation
-    This is to by-pass the issue of not accumulating displacement in z-direction
-     in MIRTK's `convert-dof` function
-     """
-    # image data saved in shape (H, W, N)
-    nim = nib.load(image_path)
-    Z = nim.header['dim'][3]
-    image = np.asanyarray(nim.dataobj).astype(data_type)
-
-    for z in range(Z):
-        image_slice = image[:, :, z]
-        image_slice = np.expand_dims(image_slice, axis=2)
-        nim2 = nib.Nifti1Image(image_slice, np.eye(4))
-        nib.save(nim2, '{0}{1:02d}.nii.gz'.format(output_prefix, z))
