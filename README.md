@@ -31,3 +31,16 @@ We believe in reproducibility and open datasets in research. Unfortunately, we a
 ## Contact Us
 If you have any question or need any help running the code, feel free to open an issue or email us at:
 [vasiliki.sideri-lampretsa@tum.de](mailto:vasiliki.sideri-lampretsa@tum.de)
+
+## Citation
+Please cite this work if any of our code or ideas are helpful for your research.
+
+```
+@article{sideri2024sinr,
+  title={Sinr: Spline-enhanced implicit neural representation for multi-modal registration},
+  author={Sideri-Lampretsa, Vasiliki and McGinnis, Julian and Qiu, Huaqi and Paschali, Magdalini and Simson, Walter and Rueckert, Daniel},
+  journal={Medical Imaging with Deep Learning},
+  pages={1462--1474},
+  year={2024},
+  publisher={PMLR}
+}
